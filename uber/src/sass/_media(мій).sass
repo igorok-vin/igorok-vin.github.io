@@ -1,0 +1,164 @@
+/**ВАЖЛИВО- Структура класів має бути така як в основному файлі.
+ ЯКЩО КЛАС НЕ ОПИСУВАВСЯ В ОСНОВНОМУ ФАЙЛЫ ТО ПРИПИСУЭТЬСЯ З НОВОЇ
+ СТРІЧКИ ЯК .footer_mobile
+
+ через панель разработчіка в браузерв зменшуєм екран до 992пс а макс значення 1200 і шукаєм елементи на сторінці яка наїжають або розміщаються не правельно внаслідок зменшення розширення екрану. Під цим правилом (max-width: 1200px) і прописуєм ці елементи з новим параметрами що підігнати під новий екран**/
+@media(max-width: 1200px)
+	.promo_header
+		font-size: 50px
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.reasons_block
+		.reasons_descr
+			width: 300px
+	.mobile_item
+		width: 300px
+	.footer
+		&_wrapper
+			position: relative
+			padding-top: 21px
+		&_links
+			margin: 0px -47px
+		&_social
+			position: absolute
+			padding-top: 20px
+
+	.footer_mobile
+		display: flex
+		flex-flow: column
+		margin: 0 111px
+/*max-width: 991px - тут 991 бо з 992 вже нове правело згідно сіткою Bootstrap*/
+@media(max-width: 991px)
+	.menu_item
+		border-right: 2px dotted #363131
+	.menu
+		&_link
+			font-size: 11px
+		&_item
+			padding-right: 10px
+	.subheader_logo
+		width: 100%
+	.subheader_official
+		font-size: 12px
+	.subheader_phone
+		font-size: 18px
+	.subheader_button
+		width: 150px
+		margin: 24px 0
+		height: 40px
+	.promo_header
+		font-size: 39px
+	.promo_subheader
+	   font-size: 28px
+	.reasons_block
+		flex-direction: column
+	.reasons_block
+		.reasons_descr
+			margin-top: 20px
+	.mobile_item
+		width: 225px
+	.footer
+		&_mobile
+			position: absolute
+			left: 26px
+@media(max-width: 767px)
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		/*при -100% меню ховається зліва і при його визові виїжає зліва на право*/
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		/*для плавності виїзда меню*/
+		transition: 0.6s all
+
+		/*клас який буде вкидати меню коли він активний або закривати коли не активний */	
+		&_active
+			left: 0
+		&_item
+			padding-right: 0px
+			border: none
+			margin: 10px 0
+		&_link
+			font-size: 20px
+	 /*меню яке випливає зліва на право. зявляється і працює тільки при розширеннях 320-767 на вищих відключене */		
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateX(-50%)
+		width: 20px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fdfdfd
+			margin-bottom: 2px
+		/*при нажимані на гамбургер він буде мінятись на хрестик*/
+		&_active
+			/*працюєм з кожною паличкою окремо через nth-child(номер)*/
+			span
+				transition: 0.6s all
+				margin-bottom: -2px
+				&:nth-child(1)
+					/*першу палочку зміщаєм на 3пс і провертаєм на -45град*/
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					/*в цей момент ця паличка буде прихована*/
+					display: none
+				&:nth-child(3)
+					/*і третю палочку провертаєв на 45град*/
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+	.subheader_phone
+		display: block
+		margin-top: 10px
+		font-size: 16px
+		font-weight: 400
+		text-align: center
+		text-transform: uppercase
+		color: #ffffff
+	.subheader_button
+		display: block
+		width: 150px
+		margin: 0 auto
+		margin-top: 5px
+		height: 40px
+	.promo_header
+		line-height: 45px
+	.mobile_item
+		display: block
+		margin: 5px auto
+		width: 265px
+	.choice
+		.car_uber
+			width: 480px
+			height: 303px
+	.subheader
+		img
+			width: 230px
+			height: 30px
+	.reasons_block
+		img
+			width: 84px
+			height: 61px
+	.footer
+		&_mobile
+			position: absolute
+			left: 26px
+@media(max-width: 575px)
+	.subheader_official
+		display: none

@@ -1,0 +1,58 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* правельне створення напівпрозорого заднього фону через background-color: rgba з альфа каналом а не через opacity */
+  background-color: rgba($color: #000000, $alpha: 0.56);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  min-height: 400px;
+  background: #f2f2f2;
+  padding: 38px 40px 40px 40px;
+  /* так як хрестик як звичайний шрифт то і параметри такі ж */
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 41px;
+    line-height: 21px;
+    color: $main-color;
+    cursor: pointer;
+  }
+  &__subtitle {    
+    font-weight: 700;
+    font-size: 18px;       
+    text-align: center;
+    color: #0d0d0d;
+  }
+  &__description {
+    font-weight: 700;
+    font-size: 14px;    
+    text-align: center;    
+    color: #0D0D0D;    
+  }
+  &_mini-window {
+    min-height: 140px;
+  }
+    //стилізація виводу повідомленнь про помилку  вводу в модальному вікні. Класи взяті з плагіна  який підключений до форми
+  .error {
+    border: 1px solid red;
+    text-align: center;
+  }
+  label.error {
+    border:none;
+    text-align: center;
+    margin-bottom: 15px;
+    color: $main-color;
+  }
+}
+#consultation, #order, #thanks {
+    display: none;
+}

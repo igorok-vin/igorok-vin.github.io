@@ -1,0 +1,250 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    /*sans-serif-визивається любий шрифт без зазубринок в буквах який може відноситись до категорії sans-serif*/
+}
+
+header {
+    position: relative;
+    /*для того щоб в .subheader спрацювало  position: absolute;для підтягування заднього фона секції під шапку. Таким чином не буде лишатись біла полоса як при transform: translateY(-84px);*/
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 53px;
+    background: #212121;
+    font-weight: normal;
+    font-style: normal;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+    /*забираєм кругляшки в невпорядкованого списка*/
+}
+
+.menu .menu_link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.menu .menu_item {
+    border-right: 3px dotted #a15555;
+    padding-right: 28px;
+    margin: 0 auto;
+}
+
+.subheader {
+    margin-top: 50px;
+    /*  position: relative;
+    /*допомагає задньому фону картінці наїжіти на шапку а 
+    z-index: 2 виводить шапку на перший план*/
+    position: absolute;
+    /*для заїзду заднього фона під шапку*/
+    width: 100%;
+    /*так як position: absolute контент сплющує в кучу а цей параметр розтягує на ширину екрана*/
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+    /*тут задаєм напівпрозорийзадній фон*/
+    /* z-index: 2; */
+    
+}
+
+.subheader .subheader_logo {
+    /*навипадок зміни лого, нове лого буде приймати всю ширину колонки ссилки */
+    display: block;
+    /*так як картінки строчні елементи а не блочні то margin просто так не діє*/
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    /*прозорість самого тексту*/
+}
+
+.subheader .subheader_call {
+    margin-top: 19px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 3px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subheader .subheader_button {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+    min-height: 800px;
+    background: url('../img/uber_bg.png') center center/cover no-repeat;
+    padding: 150px 0 180px 0;
+    /*transform: translateY(-84px);
+    /*допомагає трансформувати секцію і переміщати. Але рухаючи секцію буде лишатись полоса*/
+    /* z-index: 1; */
+    /*тримаю картінку фона на задньому плані до шапки*/
+}
+
+.promo .promo_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f5ecec;
+    opacity: 1;
+    line-height: 60px;
+    margin: 0;
+    /*зануляєм бустреп настройки*/
+    margin-top: 22px;
+    /*тут ставимо іже свої*/
+}
+
+.promo .promo_subheader {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f5ecec;
+    opacity: 1;
+}
+
+.promo .promo_description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 23px;
+}
+
+
+.promo .promo_button {
+    display: block;
+    margin: 188px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 63px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.reasons{
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+.label {
+    display: flex;    
+    margin: 0 auto; 
+    height: 27px;
+    width: 115px;
+    padding: 5px 12px;
+    background-color: #212121;
+   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px; 
+    text-transform: uppercase;
+    color: #FFFFFF;   
+}
+
+.title {   
+    margin-top: 38px;
+    text-align: center;
+    font-style: normal;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reasons .reasons_block{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 35px;
+}
+
+.reasons .reasons_block .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 116px;
+    height: 116px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_block .reasons_descr {
+    width: 343px;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_subtitle{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}

@@ -1,0 +1,30 @@
+@import "base/variables";
+@import "blocks/promo";
+@import "blocks/header.scss";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel_slick";
+@import "blocks/carousel_tiny_slider";
+@import "blocks/catalog";
+@import "blocks/titles";
+@import "blocks/review";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+@import "base/animations";
+
+* {
+  font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+/*для сиснтаксиса SCSS треба ставити { } * /
+/*задаєм ширину сторінки всього проекта через flex*/
+.conteiner {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  /*вирівнюм весь контент по центру*/
+}
+

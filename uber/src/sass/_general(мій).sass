@@ -1,0 +1,493 @@
+*
+    font-family: 'Roboto', sans-serif
+
+header
+    position: relative
+
+nav
+    position: fixed
+    width: 100%
+    height: 53px
+    background: #212121
+    font-weight: normal
+    font-style: normal
+    z-index: 2
+
+    /*приховуєм цей елемент так як він визивається при розширенні 320-768
+        і визивається тільки в media правилах*/
+.hamburger
+    display: none    
+
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 13px 70px
+    margin: 0
+    list-style-type: none
+
+.menu_link
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    align-items: center
+    color: $text_white
+    &:hover
+        text-decoration: none
+        color: #918f8f
+
+.menu_item
+    border-right: 3px dotted #ffffff
+    padding-right: 28px
+    margin: 0 auto
+    &:last-child
+        border-right: none
+
+.subheader
+    margin-top: 50px
+    position: absolute
+    width: 100%
+    height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+
+.subheader_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+
+.subheader_official
+    margin-top: 6px
+    font-style: normal
+    font-weight: 200
+    font-size: 13px
+    color: $text_white
+    opacity: 0.5
+
+.subheader_call
+    margin-top: 19px
+    text-align: right
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    color: $text_white
+    opacity: 0.8
+
+.subheader_phone
+    display: block
+    margin-top: 3px
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    text-align: right
+    text-transform: uppercase
+    color: $text_white
+
+.subheader_button
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    align-items: center
+    text-align: center
+    text-transform: uppercase
+    color: $text_white
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +button_hover
+
+.xs-visible
+    display: none
+
+.promo
+    min-height: 800px
+    background: url('../img/uber_bg.png') center (center / cover) no-repeat
+    padding: 150px 0 180px 0
+
+.promo_header    
+    font-style: normal
+    font-weight: 700
+    font-size: 55px
+    text-align: center
+    text-transform: uppercase
+    color: #f5ecec
+    opacity: 1
+    line-height: 65px
+    margin: 0
+    margin-top: 22px
+
+.promo_subheader
+    display: block
+    margin-top: 20px
+    font-style: normal
+    font-weight: 700
+    font-size: 33px
+    line-height: 30px
+    text-align: center
+    text-transform: uppercase
+    color: #f5ecec
+    opacity: 1
+
+.promo_description
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    align-items: center
+    text-align: center
+    color: $text_white
+    opacity: 1
+    margin-top: 23px
+
+.promo_button
+    display: block
+    margin: 188px auto 0 auto
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 63px
+    text-align: center
+    text-transform: uppercase
+    color: $text_white
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +button_hover
+
+.label
+    display: flex
+    margin: 0 auto
+    height: 27px
+    width: 115px
+    padding: 5px 12px
+    background-color: #212121
+    font-style: normal
+    font-weight: normal
+    font-size: 11px
+    text-transform: uppercase
+    text-align: center
+    color: #FFFFFF
+
+.label_white_bg
+    display: flex
+    margin: 0 auto
+    height: 27px
+    width: 115px
+    padding: 5px 12px
+    background-color: #ffffff
+    font-style: normal
+    font-weight: 600
+    font-size: 11px
+    text-transform: uppercase
+    text-align: center
+    color: #000000
+
+.title
+    margin-top: 33px
+    text-align: center
+    font-style: normal
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+
+.title_black
+    margin-top: 33px
+    text-align: center
+    font-style: normal
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    color: white
+
+.subtitle
+    margin-top: 19px
+    font-style: normal
+    font-weight: 500
+    font-size: 17px
+    text-align: center
+    color: #222222
+
+.subtitle_white
+    margin-top: 19px
+    font-style: normal
+    font-weight: 500
+    font-size: 17px
+    text-align: center
+    color: $text_white
+
+.reasons
+    margin: 0 auto
+    margin-top: 18px
+
+.reasons_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+
+    .reasons_round
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 26px
+        width: 116px
+        height: 116px
+        background-color: #1eacc7
+        border-radius: 100%
+
+    .reasons_descr
+        width: 343px
+
+    .reasons_subtitle
+        line-height: 21px
+        color: #1eacc7
+        font-size: 17px
+        font-weight: 400
+
+    .reasons_text
+        color: #202020
+        font-size: 15px
+        font-weight: 300
+        line-height: 21px
+
+.mobile
+    min-height: 864px
+    margin: 0 auto
+    padding: 48px 0 79px 0
+    background: url('../img/mobile_bg.png') center (center / cover) no-repeat
+    .row
+        margin-top: 32px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin-bottom: 19px
+        padding-top: 92px
+        &_1
+            background: url('../img/mobile_screen_1.png') center (center / cover) no-repeat
+        &_2
+            background: url('../img/mobile_screen_2.png') center (center / cover) no-repeat
+        &_3
+            background: url('../img/mobile_screen_3.png') center (center / cover) no-repeat
+        &_4
+            background: url('../img/mobile_screen_4.png') center (center / cover) no-repeat
+        &_5
+            background: url('../img/mobile_screen_5.png') center (center / cover) no-repeat
+        &_6
+            background: url('../img/mobile_screen_6.png') center (center / cover) no-repeat
+        &_subtitle
+            font-style: normal
+            font-weight: 400
+            font-size: 24px
+            line-height: 31px
+            text-align: center
+            text-transform: uppercase
+            color: $text_white
+        &_plus
+            display: flex
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            /**щоб значок був чітко по центру**/
+            transform: translateX(-50%)
+            width: 29px
+            height: 29px
+            background: #000000
+            border-radius: 100%
+            padding: 7px
+            margin: 0 auto
+            cursor: pointer
+            /**создаєм знак плюс через псевдоелементи а не картінку**/
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $buttons_color
+                transition: 0.3s all
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                right: 48%
+                height: 14px
+                width: 2px
+                background-color: $buttons_color
+                transition: 0.3s all
+
+                /*при наведені на створений плюс в css міняється його колір*/
+            &:hover
+                &:after, &:before
+                    background-color: #a53a3a
+
+.choice
+    position: relative
+    min-height: 897px
+    padding: 48px 0 138px 0
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background: #000000
+        z-index: -1
+    .car_uber
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-top: 56px
+    .bottom_link
+        display: block
+        margin: 0 auto
+        width: 327px
+        height: 49px
+        text-align: center
+        .car_link
+            font-style: normal
+            font-weight: 400
+            font-size: 17px
+            line-height: 24px
+            color: #0a0a0a
+
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0
+        /*через додатковий клас забрали margin-bottom в 3 і 4 блока*/
+        &_no_margin_bottom
+            margin-bottom: 0px
+    &_title
+        font-style: normal
+        font-weight: 600
+        font-size: 22px
+        color: #1CA8C3
+
+        /**обнуляєм діфолт стилізацію списка щоб потім задати свою**/
+    &_list
+        list-style-type: none
+        padding-left: 40px
+        margin-top: 22px
+        li
+            position: relative
+            font-weight: 400
+            font-size: 17px
+            line-height: 24px
+            color: #222222
+            margin-bottom: 10px
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/list_blue.png') center (center / cover) no-repeat
+    &_descr
+        width: 480px
+        height: 41px
+        margin-top: 25px
+        font-style: normal
+        font-weight: 400
+        font-size: 17px
+        line-height: 24px
+        color: #1CA8C3
+    .warning
+        .require_title
+            color: #FF5656
+        li
+            &:before
+                background: url('../icons/list_red.png') center (center / cover) no-repeat
+
+.world
+    position: relative
+    min-height: 717px
+    padding: 49px 0
+    background: url('../img/map.jpg') center (center / cover) no-repeat
+    .cities
+        display: block
+        height: 27px
+        width: 75px
+        margin: 0 auto
+    &_link
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        color: #1CA8C3
+        &:hover
+            text-decoration: none
+            color: #fff
+
+footer
+    padding: 14px 23px 39px 23px
+.footer
+    &_divider
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+        margin: 0 auto
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    &_wrapper > div
+        position: relative
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: center
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-around
+        &_item
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 4px
+            width: 25px
+            height: 25px
+    &_links
+        width: 390px
+        margin: 0 auto
+        &_main
+            display: flex
+            justify-content: space-between
+            padding: 0 10px
+            a
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+        &_sub
+            display: flex
+            justify-content: space-between
+            margin-top: 10px
+            a
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        &_lang
+            display: block
+            margin: 0 auto
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            margin-top: 19px
+            text-transform: uppercase
+            text-align: center

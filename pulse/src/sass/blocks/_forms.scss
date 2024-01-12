@@ -1,0 +1,34 @@
+.feed-form {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  input {
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 15px;
+    border: none;
+    padding: 0 20px;    
+    font-weight: 400;
+    font-size: 14px;    
+    color: #4b4b4b;
+    &:nth-child(3) {
+      margin-bottom: 20px;
+    }
+  }
+  &_modal-window {
+    margin-top: 25px;
+  }
+  //стилізація виводу повідомленнь про помилку  вводу в модальному вікні. Класи взяті з плагіна  який підключений до форми
+  .error {
+    border: 1px solid red;
+    text-align: center;
+  }
+  label.error {
+    border:none;
+    text-align: center;
+    margin-bottom: 15px;
+    color: $main-color;
+  }
+}
