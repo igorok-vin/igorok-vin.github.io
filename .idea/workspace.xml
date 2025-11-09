@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="abf242fd-c467-4ac8-95e1-85d0510617ec" name="Changes" comment="portfolio" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;igorok-vin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/igorok-vin/igorok-vin.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;b9f45b9a-7680-455a-8f59-23f360d4b1e1&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2vi92ki2jImn38hbcNAUAz3Cq3P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/prog_web/prog/Java/REST_API/Nam_course/first_project/HelloRestAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abf242fd-c467-4ac8-95e1-85d0510617ec" name="Changes" comment="" />
+      <created>1744616823664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744616823664</updated>
+      <workItem from="1744616825216" duration="6277000" />
+      <workItem from="1744768669254" duration="368000" />
+      <workItem from="1744769286922" duration="2543000" />
+      <workItem from="1744858832094" duration="934000" />
+      <workItem from="1744944817720" duration="38000" />
+    </task>
+    <task id="LOCAL-00001" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744616887604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744616887604</updated>
+    </task>
+    <task id="LOCAL-00002" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744676906317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744676906317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744685020619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744685020619</updated>
+    </task>
+    <task id="LOCAL-00004" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744685978201</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744685978201</updated>
+    </task>
+    <task id="LOCAL-00005" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744686945796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744686945796</updated>
+    </task>
+    <task id="LOCAL-00006" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744687071575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744687071575</updated>
+    </task>
+    <task id="LOCAL-00007" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744688157888</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744688157888</updated>
+    </task>
+    <task id="LOCAL-00008" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744769336049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744769336049</updated>
+    </task>
+    <task id="LOCAL-00009" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744783314422</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744783314422</updated>
+    </task>
+    <task id="LOCAL-00010" summary="portfolio">
+      <option name="closed" value="true" />
+      <created>1744858867458</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744858867458</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio" />
+  </component>
+</project>
